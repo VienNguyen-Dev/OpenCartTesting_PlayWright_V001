@@ -1,0 +1,6 @@
+Error waiting for header: page.waitForSelector: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('//h2[normalize-space()=\'My Account\']') to be visible
+
+    at MyAccountPage.validateHeaderPage (C:\Users\DELL\Desktop\JAVA\document testing\Automation Testing\Playwright\OpenCart\pages-object\MyAccountPage.js:9:23)
+    at C:\Users\DELL\Desktop\JAVA\document testing\Automation Testing\Playwright\OpenCart\tests\LoginTest.spec.js:17:48

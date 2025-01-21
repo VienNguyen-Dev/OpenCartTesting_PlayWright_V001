@@ -1,0 +1,34 @@
+Error waiting for header: locator.isVisible: Target page, context or browser has been closed
+Call log:
+    - checking visibility of locator('//h2[normalize-space()=\'My Account\']')
+
+    at MyAccountPage.validateHeaderPage (C:\Users\DELL\Desktop\JAVA\document testing\Automation Testing\Playwright\OpenCart\pages-object\MyAccountPage.js:10:60) {
+  [Symbol(step)]: {
+    stepId: 'pw:api@21',
+    location: {
+      file: 'C:\\Users\\DELL\\Desktop\\JAVA\\document testing\\Automation Testing\\Playwright\\OpenCart\\pages-object\\MyAccountPage.js',
+      line: 10,
+      column: 60,
+      function: 'MyAccountPage.validateHeaderPage'
+    },
+    category: 'pw:api',
+    title: "locator.isVisible(//h2[normalize-space()='My Account'])",
+    apiName: 'locator.isVisible',
+    params: { selector: "//h2[normalize-space()='My Account']", strict: true },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1737166181137,
+    error: {
+      message: 'Error: locator.isVisible: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        "\x1B[2m    - checking visibility of locator('//h2[normalize-space()=\\'My Account\\']')\x1B[22m\n",
+      stack: 'Error: locator.isVisible: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        "\x1B[2m    - checking visibility of locator('//h2[normalize-space()=\\'My Account\\']')\x1B[22m\n" +
+        '\n' +
+        '    at MyAccountPage.validateHeaderPage (C:\\Users\\DELL\\Desktop\\JAVA\\document testing\\Automation Testing\\Playwright\\OpenCart\\pages-object\\MyAccountPage.js:10:60)',
+      cause: undefined
+    }
+  }
+}

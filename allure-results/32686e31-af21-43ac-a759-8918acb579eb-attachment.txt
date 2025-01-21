@@ -1,0 +1,7 @@
+Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 22053,
+  [Symbol(trigger_async_id_symbol)]: 13618,
+  [Symbol(kResourceStore)]: undefined
+}
+page.fill: value: expected string, got undefined

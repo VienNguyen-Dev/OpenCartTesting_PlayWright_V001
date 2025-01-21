@@ -1,0 +1,39 @@
+Error waiting for header: page.waitForSelector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('//h2[normalize-space()=\'My Account\']') to be visible
+
+    at MyAccountPage.validateHeaderPage (C:\Users\DELL\Desktop\JAVA\document testing\Automation Testing\Playwright\OpenCart\pages-object\MyAccountPage.js:9:23)
+    at C:\Users\DELL\Desktop\JAVA\document testing\Automation Testing\Playwright\OpenCart\tests\LoginTest.spec.js:24:48 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@17',
+    location: {
+      file: 'C:\\Users\\DELL\\Desktop\\JAVA\\document testing\\Automation Testing\\Playwright\\OpenCart\\pages-object\\MyAccountPage.js',
+      line: 9,
+      column: 23,
+      function: 'MyAccountPage.validateHeaderPage'
+    },
+    category: 'pw:api',
+    title: "page.waitForSelector(//h2[normalize-space()='My Account'])",
+    apiName: 'page.waitForSelector',
+    params: {
+      selector: "//h2[normalize-space()='My Account']",
+      state: 'visible'
+    },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1737251655203,
+    error: {
+      message: 'Error: page.waitForSelector: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('//h2[normalize-space()=\\'My Account\\']') to be visible\x1B[22m\n",
+      stack: 'Error: page.waitForSelector: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('//h2[normalize-space()=\\'My Account\\']') to be visible\x1B[22m\n" +
+        '\n' +
+        '    at MyAccountPage.validateHeaderPage (C:\\Users\\DELL\\Desktop\\JAVA\\document testing\\Automation Testing\\Playwright\\OpenCart\\pages-object\\MyAccountPage.js:9:23)\n' +
+        '    at C:\\Users\\DELL\\Desktop\\JAVA\\document testing\\Automation Testing\\Playwright\\OpenCart\\tests\\LoginTest.spec.js:24:48',
+      cause: undefined
+    }
+  }
+}
