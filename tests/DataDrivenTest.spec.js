@@ -18,11 +18,11 @@ test.describe('Login Functionality Testing', () => {
       await hp.clickOnDropdownMenu();
       await hp.clickOnLogin();
       await page.waitForTimeout(3000);
-
       const lp = new LoginPage(page);
       await lp.login(data.username, data.password.toString());
       const myAccount = new MyAccountPage(page);
       expect(await myAccount.validateHeaderPage()).toBe(true);
+
       await page.waitForTimeout(3000);
     });
   });
