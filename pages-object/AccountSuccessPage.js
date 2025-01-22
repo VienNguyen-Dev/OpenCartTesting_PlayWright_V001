@@ -4,7 +4,12 @@ exports.AccountSuccessPage = class {
     this.messageText = "#content h1";
   }
   async checkConfirmMessage() {
-    await this.page.waitForSelector(this.messageText, { state: "visible" });
-    return this.page.locator(this.messageText).textContent();
+    try {
+      await this.page.waitForSelector(this.messageText, { state: "visible" });
+      return this.page.locator(this.messageText).textContent();
+
+    } catch (error) {
+      return null;
+    }
   }
 }
