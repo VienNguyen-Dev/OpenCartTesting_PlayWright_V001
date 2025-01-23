@@ -1,0 +1,8 @@
+C:\Users\DELL\Desktop\JAVA\document testing\Automation Testing\Playwright\OpenCart\pages-object\ProductPage.js:30
+  async confirmSuccessMessage() {
+                             ^
+
+RangeError: Maximum call stack size exceeded
+(Use `node --trace-uncaught ...` to show where the exception was thrown)
+
+Node.js v18.17.1

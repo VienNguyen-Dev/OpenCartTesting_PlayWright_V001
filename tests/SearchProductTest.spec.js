@@ -22,7 +22,7 @@ test.describe("SearchProductTest", () => {
     //Validate product name and product Page
     expect(await proResultPage.isProductResultPageExist()).toBe(true);
     await page.waitForTimeout(3000);
-    expect(await proResultPage.isProductResultPageExist()).toBe(true);
+    expect(await proResultPage.isProductNameExist(process.env.SEARCHPRODUCTNAME)).toBe(true);
     await page.waitForTimeout(3000);
 
   })

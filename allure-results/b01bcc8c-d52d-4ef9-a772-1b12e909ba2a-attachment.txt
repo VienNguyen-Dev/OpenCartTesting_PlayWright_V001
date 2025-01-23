@@ -1,0 +1,37 @@
+Disable to click on shopping cart link page.click: selector: expected string, got function
+    at ProductPage.clickOnShoppingCartLink (C:\Users\DELL\Desktop\JAVA\document testing\Automation Testing\Playwright\OpenCart\pages-object\ProductPage.js:21:23)
+    at C:\Users\DELL\Desktop\JAVA\document testing\Automation Testing\Playwright\OpenCart\tests\AddToCartTest.spec.js:37:50 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@23',
+    location: {
+      file: 'C:\\Users\\DELL\\Desktop\\JAVA\\document testing\\Automation Testing\\Playwright\\OpenCart\\pages-object\\ProductPage.js',
+      line: 21,
+      column: 23,
+      function: 'ProductPage.clickOnShoppingCartLink'
+    },
+    category: 'pw:api',
+    title: 'page.click(async clickOnShoppingCartLink() {\n' +
+      '    try {\n' +
+      '      await this.page.click(this.clickOnShoppingCartLink);\n' +
+      '      const shoppingCartPage = new ShoppingCartPage(this.page);\n' +
+      '      return shoppingCartPage;\n' +
+      '    } catch (error) {\n' +
+      '      console.log("Disable to click on shopping cart link", error);\n' +
+      '      return null;\n' +
+      '    }\n' +
+      '  })',
+    apiName: 'page.click',
+    params: { selector: [AsyncFunction: clickOnShoppingCartLink] },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1737600276884,
+    error: {
+      message: 'Error: page.click: selector: expected string, got function',
+      stack: 'Error: page.click: selector: expected string, got function\n' +
+        '    at ProductPage.clickOnShoppingCartLink (C:\\Users\\DELL\\Desktop\\JAVA\\document testing\\Automation Testing\\Playwright\\OpenCart\\pages-object\\ProductPage.js:21:23)\n' +
+        '    at C:\\Users\\DELL\\Desktop\\JAVA\\document testing\\Automation Testing\\Playwright\\OpenCart\\tests\\AddToCartTest.spec.js:37:50',
+      cause: undefined
+    }
+  }
+}

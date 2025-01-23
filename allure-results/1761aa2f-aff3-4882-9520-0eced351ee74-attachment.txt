@@ -1,0 +1,1 @@
+Product don't added to Shopping Cart locator.textContent: Target page, context or browser has been closed
