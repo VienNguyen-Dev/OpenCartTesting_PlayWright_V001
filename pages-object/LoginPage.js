@@ -1,3 +1,5 @@
+const { MyAccountPage } = require("./MyAccountPage");
+
 exports.LoginPage = class LoginPage {
   constructor(page) {
     this.page = page;
@@ -9,8 +11,18 @@ exports.LoginPage = class LoginPage {
   async login(email, password) {
     await this.page.fill(this.emailInput, email);
     await this.page.fill(this.passwordInput, password);
-    await this.page.click(this.loginButton);
+
   }
 
-
+  async clickOnLoginButton() {
+    try {
+      await this.page.click(this.loginButton);
+      const myaccountPage = new MyAccountPage(this.page);
+      return myaccountPage;
+    } catch (error) {
+      console.log("Error while clicking on Login Button", error.message)
+        ;
+      return null;
+    }
+  }
 }

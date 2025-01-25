@@ -1,0 +1,38 @@
+Error while clicking on Register button page.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('//input[@value=\'Continue\']')
+
+    at RegisterPage.clickOnRegisterButton (C:\Users\DELL\Desktop\JAVA\document testing\Automation Testing\Playwright\OpenCart\pages-object\RegisterPage.js:34:23)
+    at performRegisterAccount (C:\Users\DELL\Desktop\JAVA\document testing\Automation Testing\Playwright\OpenCart\tests\EndToEndTest.spec.js:64:41)
+    at C:\Users\DELL\Desktop\JAVA\document testing\Automation Testing\Playwright\OpenCart\tests\EndToEndTest.spec.js:30:19 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@22',
+    location: {
+      file: 'C:\\Users\\DELL\\Desktop\\JAVA\\document testing\\Automation Testing\\Playwright\\OpenCart\\pages-object\\RegisterPage.js',
+      line: 34,
+      column: 23,
+      function: 'RegisterPage.clickOnRegisterButton'
+    },
+    category: 'pw:api',
+    title: "page.click(//input[@value='Continue'])",
+    apiName: 'page.click',
+    params: { selector: "//input[@value='Continue']" },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1737704882354,
+    error: {
+      message: 'Error: page.click: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('//input[@value=\\'Continue\\']')\x1B[22m\n",
+      stack: 'Error: page.click: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('//input[@value=\\'Continue\\']')\x1B[22m\n" +
+        '\n' +
+        '    at RegisterPage.clickOnRegisterButton (C:\\Users\\DELL\\Desktop\\JAVA\\document testing\\Automation Testing\\Playwright\\OpenCart\\pages-object\\RegisterPage.js:34:23)\n' +
+        '    at performRegisterAccount (C:\\Users\\DELL\\Desktop\\JAVA\\document testing\\Automation Testing\\Playwright\\OpenCart\\tests\\EndToEndTest.spec.js:64:41)\n' +
+        '    at C:\\Users\\DELL\\Desktop\\JAVA\\document testing\\Automation Testing\\Playwright\\OpenCart\\tests\\EndToEndTest.spec.js:30:19',
+      cause: undefined
+    }
+  }
+}

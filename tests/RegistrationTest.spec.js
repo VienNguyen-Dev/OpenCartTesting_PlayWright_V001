@@ -2,7 +2,6 @@ import { test, expect } from '@playwright/test';
 import { HomePage } from '../pages-object/HomePage';
 import { BaseClass } from './BaseClass';
 import { RegisterPage } from '../pages-object/RegisterPage';
-import { AccountSuccessPage } from '../pages-object/AccountSuccessPage';
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -25,8 +24,8 @@ test.describe("Register new account Testing", async () => {
     const password = baseClass.randomStringAndNumber();
     const email = baseClass.randomStringAndNumber() + "gmail.com";
     regPage.provideAccountDetails(baseClass.randomString(), baseClass.randomString(), email, baseClass.randomNumber(), password);
+    const accSuccessPage = await regPage.clickOnRegisterButton();
     await page.waitForTimeout(3000);
-    const accSuccessPage = new AccountSuccessPage(page);
     expect(await accSuccessPage.checkConfirmMessage()).toBe("Your Account Has Been Created!");
     await page.waitForTimeout(3000);
 

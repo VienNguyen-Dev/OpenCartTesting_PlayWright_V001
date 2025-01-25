@@ -1,0 +1,37 @@
+Error while clicking on Register button page.click: selector: expected string, got function
+    at RegisterPage.clickOnRegisterButton (C:\Users\DELL\Desktop\JAVA\document testing\Automation Testing\Playwright\OpenCart\pages-object\RegisterPage.js:34:23)
+    at C:\Users\DELL\Desktop\JAVA\document testing\Automation Testing\Playwright\OpenCart\tests\RegistrationTest.spec.js:28:42 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@14',
+    location: {
+      file: 'C:\\Users\\DELL\\Desktop\\JAVA\\document testing\\Automation Testing\\Playwright\\OpenCart\\pages-object\\RegisterPage.js',
+      line: 34,
+      column: 23,
+      function: 'RegisterPage.clickOnRegisterButton'
+    },
+    category: 'pw:api',
+    title: 'page.click(async clickOnRegisterButton() {\n' +
+      '    try {\n' +
+      '      await this.page.click(this.clickOnRegisterButton);\n' +
+      '      const succAccountPage = new _AccountSuccessPage.AccountSuccessPage(this.page);\n' +
+      '      return succAccountPage;\n' +
+      '    } catch (error) {\n' +
+      '      console.log("Error while clicking on Register button", error);\n' +
+      '      return null;\n' +
+      '    }\n' +
+      '  })',
+    apiName: 'page.click',
+    params: { selector: [AsyncFunction: clickOnRegisterButton] },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1737704560484,
+    error: {
+      message: 'Error: page.click: selector: expected string, got function',
+      stack: 'Error: page.click: selector: expected string, got function\n' +
+        '    at RegisterPage.clickOnRegisterButton (C:\\Users\\DELL\\Desktop\\JAVA\\document testing\\Automation Testing\\Playwright\\OpenCart\\pages-object\\RegisterPage.js:34:23)\n' +
+        '    at C:\\Users\\DELL\\Desktop\\JAVA\\document testing\\Automation Testing\\Playwright\\OpenCart\\tests\\RegistrationTest.spec.js:28:42',
+      cause: undefined
+    }
+  }
+}

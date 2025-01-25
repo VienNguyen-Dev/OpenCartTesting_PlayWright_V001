@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { HomePage } from '../pages-object/HomePage';
 import { LoginPage } from '../pages-object/LoginPage';
-import { MyAccountPage } from '../pages-object/MyAccountPage';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -19,9 +18,9 @@ test("TC_002_Login_Functionality", async ({ page }) => {
   homePage.clickOnLogin();
   await page.waitForTimeout(3000);
   const loginPage = new LoginPage(page);
-  loginPage.login(process.env.EMAIL, process.env.PASSWORD);
+  await loginPage.login(process.env.EMAIL, process.env.PASSWORD);
+  const myAccountPage = await loginPage.clickOnLoginButton();
   await page.waitForTimeout(2000);
-  const myAccountPage = new MyAccountPage(page);
   const pageHeaderStatus = await myAccountPage.validateHeaderPage();
   expect(pageHeaderStatus).toBe(true);
   await page.waitForTimeout(3000);

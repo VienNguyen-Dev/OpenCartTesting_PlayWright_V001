@@ -1,6 +1,8 @@
 const { ProductResultPage } = require("./ProductResultPage");
+const { RegisterPage } = require("./RegisterPage");
+import { LoginPage } from './LoginPage'
 
-exports.HomePage = class HomePage {
+export class HomePage {
 
   constructor(page) {
     this.page = page;
@@ -9,6 +11,7 @@ exports.HomePage = class HomePage {
     this.loginLink = "//a[normalize-space()='Login']";
     this.searchTextBox = "//input[@placeholder='Search']";
     this.searchButton = "//button[@class='btn btn-default btn-lg']";
+    this.featureProductList = "//div[@id='content']//div[@class='image']//img";
   }
 
   async clickOnDropdownMenu() {
@@ -17,11 +20,15 @@ exports.HomePage = class HomePage {
 
   async clickOnRegister() {
     await this.page.click(this.registerLink);
+    const regPage = new RegisterPage(this.page);
+    return regPage;
 
   }
 
   async clickOnLogin() {
     await this.page.click(this.loginLink);
+    const loginPage = new LoginPage(this.page);
+    return loginPage;
   }
 
   async provideProductName(productName) {
@@ -34,6 +41,16 @@ exports.HomePage = class HomePage {
       const productResultPage = new ProductResultPage(this.page);
       return productResultPage;
     } catch (error) {
+      return null;
+    }
+  }
+
+  async homePageExist() {
+    try {
+      const productLists = await this.page.$$(this.featureProductList);
+      return await productLists.length;
+    } catch (error) {
+      console.log("Home Page is not exist", error.message);
       return null;
     }
   }

@@ -7,7 +7,6 @@ exports.ShoppingCartPage = class ShoppingCartPage {
 
   async validateProductAddedToCart(productName) {
     try {
-
       if (await this.page.locator(this.productNameInShoppingCart).textContent() === productName) {
         return true;
       } else {

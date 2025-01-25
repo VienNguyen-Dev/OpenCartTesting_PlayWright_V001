@@ -1,0 +1,40 @@
+Error while clicking on Logout Link page.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('//a[@class=\'dropdown-item\'][normalize-space()=\'Logout\']')
+
+    at MyAccountPage.clickOnLogoutLink (C:\Users\DELL\Desktop\JAVA\document testing\Automation Testing\Playwright\OpenCart\pages-object\MyAccountPage.js:30:23)
+    at performLogout (C:\Users\DELL\Desktop\JAVA\document testing\Automation Testing\Playwright\OpenCart\tests\EndToEndTest.spec.js:75:40)
+    at C:\Users\DELL\Desktop\JAVA\document testing\Automation Testing\Playwright\OpenCart\tests\EndToEndTest.spec.js:33:5 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@29',
+    location: {
+      file: 'C:\\Users\\DELL\\Desktop\\JAVA\\document testing\\Automation Testing\\Playwright\\OpenCart\\pages-object\\MyAccountPage.js',
+      line: 30,
+      column: 23,
+      function: 'MyAccountPage.clickOnLogoutLink'
+    },
+    category: 'pw:api',
+    title: "page.click(//a[@class='dropdown-item'][normalize-space()='Logout'])",
+    apiName: 'page.click',
+    params: {
+      selector: "//a[@class='dropdown-item'][normalize-space()='Logout']"
+    },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1737705093065,
+    error: {
+      message: 'Error: page.click: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('//a[@class=\\'dropdown-item\\'][normalize-space()=\\'Logout\\']')\x1B[22m\n",
+      stack: 'Error: page.click: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('//a[@class=\\'dropdown-item\\'][normalize-space()=\\'Logout\\']')\x1B[22m\n" +
+        '\n' +
+        '    at MyAccountPage.clickOnLogoutLink (C:\\Users\\DELL\\Desktop\\JAVA\\document testing\\Automation Testing\\Playwright\\OpenCart\\pages-object\\MyAccountPage.js:30:23)\n' +
+        '    at performLogout (C:\\Users\\DELL\\Desktop\\JAVA\\document testing\\Automation Testing\\Playwright\\OpenCart\\tests\\EndToEndTest.spec.js:75:40)\n' +
+        '    at C:\\Users\\DELL\\Desktop\\JAVA\\document testing\\Automation Testing\\Playwright\\OpenCart\\tests\\EndToEndTest.spec.js:33:5',
+      cause: undefined
+    }
+  }
+}

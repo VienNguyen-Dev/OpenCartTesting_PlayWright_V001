@@ -22,6 +22,6 @@ exports.BaseClass = class BaseClass {
   randomStringAndNumber() {
     const randomAlphabetic = this.randomString(4);
     const randomNumeric = this.randomNumber(4);
-    return `${randomAlphabetic}@${randomNumeric}`;
+    return `${randomAlphabetic}@${randomNumeric}`.toLowerCase();
   }
 }

@@ -1,0 +1,7 @@
+Disable to click on shopping cart link page.click: Test ended.
+Call log:
+  - waiting for locator('//a[normalize-space()=\'shopping cart\']')
+
+    at ProductPage.clickOnShoppingCartLink (C:\Users\DELL\Desktop\JAVA\document testing\Automation Testing\Playwright\OpenCart\pages-object\ProductPage.js:21:23)
+    at validateProductShoppingCart (C:\Users\DELL\Desktop\JAVA\document testing\Automation Testing\Playwright\OpenCart\tests\EndToEndTest.spec.js:105:36)
+    at C:\Users\DELL\Desktop\JAVA\document testing\Automation Testing\Playwright\OpenCart\tests\EndToEndTest.spec.js:45:11

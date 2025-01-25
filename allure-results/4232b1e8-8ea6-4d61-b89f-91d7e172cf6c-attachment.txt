@@ -1,0 +1,7 @@
+Home Page is not exist locator.isVisible: Error: strict mode violation: locator('//a[normalize-space()=\'Register\']') resolved to 2 elements:
+    1) <a href="http://localhost/opencart/upload/index.php?route=account/register">Register</a> aka locator('#top-links').getByText('Register')
+    2) <a class="list-group-item" href="http://localhost/opencart/upload/index.php?route=account/register">Register</a> aka getByRole('link', { name: 'Register' })
+
+Call log:
+    - checking visibility of locator('//a[normalize-space()=\'Register\']')
+

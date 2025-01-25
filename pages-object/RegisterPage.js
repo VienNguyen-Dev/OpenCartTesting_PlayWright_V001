@@ -1,4 +1,5 @@
-exports.RegisterPage = class RegisterPage {
+import { AccountSuccessPage } from './AccountSuccessPage'
+export class RegisterPage {
   constructor(page) {
     this.page = page;
     this.firstNameInput = "//input[@id='input-firstname']";
@@ -20,11 +21,21 @@ exports.RegisterPage = class RegisterPage {
       await this.page.fill(this.passwordInput, password);
       await this.page.fill(this.passwordConfirmInput, password);
       await this.page.click(this.policyCheckbox);
-      await this.page.click(this.continueButton);
 
     } catch (error) {
       console.log(error.message);
     }
 
+  }
+
+  async clickOnRegisterButton() {
+    try {
+      await this.page.click(this.continueButton);
+      const succAccountPage = new AccountSuccessPage(this.page);
+      return succAccountPage;
+    } catch (error) {
+      console.log("Error while clicking on Register button", error);
+      return null;
+    }
   }
 }
